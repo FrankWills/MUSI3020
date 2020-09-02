@@ -4,6 +4,15 @@
         <title>Frank's MUSI3020 Portfolio</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link href="sticky-footer-navbar.css" rel="stylesheet">
+        <style>
+            body{counter-reset: postNum;}
+            .post-title::before{
+                counter-increment: postNum;
+                content: counter(postNum)": ";
+                color: white;
+                background-color: black; 
+            }
+        </style>
     </head>
     <body>
 
@@ -24,15 +33,23 @@
                 </h3>
                 
                 <div class="blog-post">
-                <h2 class="blog-post-title">Introduction Post</h2>
+                <h2 class="blog-post-title post-title">Introduction Discussion Post</h2>
                 <p class="blog-post-meta">August 28, 2020</p>
         
-                <p>Learn more about me and my favorite song, <i>Asgore</i> by Toby Fox.</p>
+                <p>Learn about me and my favorite song, <i>Asgore</i> by Toby Fox.</p>
                 <a type="button" class="btn btn-primary" href="introduction_post.html">View</a>
                 </div><!-- /.blog-post -->
                 <br>
                 <div class="blog-post">
-                    <h2 class="blog-post-title">Future Post</h2>
+                    <h2 class="blog-post-title post-title">Welcome Post</h2>
+                    <p class="blog-post-meta">September 2, 2020</p>
+            
+                    <p>Learn even more about me and the music I like to listen to.</p>
+                    <a type="button" class="btn btn-primary" href="welcome_post.html">View</a>
+                    </div><!-- /.blog-post -->
+                    <br>
+                <div class="blog-post">
+                    <h2 class="blog-post-title post-title">Future Post</h2>
                     <p class="blog-post-meta">Month XX, 2020</p>
             
                     <p>Who knows what this could be about.</p>
@@ -40,7 +57,7 @@
                 </div><!-- /.blog-post -->
                 <br>
                 <div class="blog-post">
-                    <h2 class="blog-post-title">Another Future Post</h2>
+                    <h2 class="blog-post-title post-title">Another Future Post</h2>
                     <p class="blog-post-meta">Month XX, 2020</p>
             
                     <p>A mystery...</p>
